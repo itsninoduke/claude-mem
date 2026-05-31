@@ -70,6 +70,19 @@ function spark(size = 118) {
   return `<svg width="${size}" height="${size}" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">${rays}</svg>`;
 }
 
+// Microsoft logo lockup (4 squares + wordmark) for the credibility beat.
+function msLogo() {
+  return `<div class="mslogo">
+    <svg width="92" height="92" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+      <rect x="2" y="2" width="44" height="44" fill="#F25022"/>
+      <rect x="54" y="2" width="44" height="44" fill="#7FBA00"/>
+      <rect x="2" y="54" width="44" height="44" fill="#00A4EF"/>
+      <rect x="54" y="54" width="44" height="44" fill="#FFB900"/>
+    </svg>
+    <span>Microsoft</span>
+  </div>`;
+}
+
 // Brush-stroke swoosh (decorative, bottom-right on some slides).
 const swoosh = `<svg class="swoosh" width="360" height="120" viewBox="0 0 360 120" xmlns="http://www.w3.org/2000/svg">
   <path d="M12,86 C90,40 220,30 348,64" fill="none" stroke="#FFFFFF" stroke-width="9" stroke-linecap="round" opacity="0.92"/>
@@ -168,6 +181,9 @@ function renderSlide(slide, idx, total, seed) {
   .card{background:#fff;color:#15131C;border-radius:26px;padding:40px 42px;width:100%;max-width:860px;box-shadow:0 30px 80px rgba(0,0,0,.45);text-align:left}
   .card .ctitle{font-weight:800;font-size:34px;margin-bottom:22px;display:flex;align-items:center;gap:16px}
   .card .badge{background:#15131C;color:#fff;font-weight:800;font-size:24px;width:46px;height:46px;border-radius:12px;display:flex;align-items:center;justify-content:center}
+  .mslogo{display:flex;align-items:center;justify-content:center;gap:20px;padding:6px 0 10px}
+  .mslogo span{font-weight:600;font-size:62px;color:#5E5E5E;letter-spacing:-.01em}
+  .mssub{text-align:center;font-weight:700;font-size:28px;color:#8A8594;padding-bottom:22px;border-bottom:1px solid #ECE9F1;margin-bottom:6px}
   .row{display:flex;justify-content:space-between;align-items:center;font-weight:700;font-size:34px;padding:18px 0;border-bottom:1px solid #ECE9F1}
   .row:last-child{border-bottom:none}
   .row .num{font-family:'JetBrains Mono',monospace;color:var(--accent);font-weight:700}
@@ -223,11 +239,12 @@ const decks = {
       { kind: "std",
         eyebrow: `La solución`,
         title: `MarkItDown`,
-        body: `Gratis. De Microsoft. <span class="hl">+110K</span> estrellas en GitHub.`,
+        body: `Gratis. <span class="hl">+110K</span> estrellas en GitHub.`,
         mock: `<div class="card">
-          <div class="ctitle"><span class="badge">→</span> Convierte a Markdown limpio</div>
+          ${msLogo()}
+          <div class="mssub">Open source · creado por Microsoft</div>
           <div class="row"><span>PDF · Word · Excel</span><span class="num">→ .md</span></div>
-          <div class="row"><span>PPT · imágenes</span><span class="num">→ .md</span></div>
+          <div class="row"><span>PPT · imágenes</span><span class="num">→ texto limpio</span></div>
         </div>` },
       { kind: "std",
         title: `Pasan 2 cosas:`,
