@@ -10,6 +10,16 @@ Two decks, one per winning video formula:
 |------|------|--------|-------|-----------|
 | MARKIT  (1.1M video) | `markit/` | 9 | Stop wasting tokens on PDFs → MarkItDown | comment **MARKIT** |
 | LEGAL   (646K video) | `legal/`  | 8 | Legal agents inside Claude (educational) | comment **LEGAL** |
+| MARKIT — pixel theme | `markit-pixel/` | 9 | Same MARKIT copy, 8-bit / Super-Mario look (token = coin) | comment **MARKIT** |
+
+## Themes
+
+- **Default (dark / coral):** `build.mjs` → `markit/`, `legal/`.
+- **Pixel-art (8-bit):** `build-pixel.mjs` → `markit-pixel/`. Sky + clouds + brick
+  ground, "Press Start 2P" / "VT323" fonts (embedded from `fonts/` as data URIs so
+  rendering needs no network), coin-as-token motif, NES dialog boxes, HUD scoreboard,
+  pixel Microsoft logo, retro terminal for the MCP config. Build with
+  `node carousels/build-pixel.mjs` then `node carousels/render.mjs`.
 
 Each deck folder holds `slide-NN.html` (standalone) and `slide-NN.png` (post-ready).
 
