@@ -16,8 +16,8 @@ const BRAND = {
   accent: "#ED7A4E",       // coral / orange spark
   accentSoft: "#F4A47E",
   bg: "#0A0A0F",
-  handle: "@formula100k",   // <-- change to your real IG handle
-  avatarInitials: "F",      // shown inside the profile chip
+  handle: "@ninodirector",  // <-- change to your real IG handle
+  avatarInitials: "N",      // shown inside the profile chip
 };
 
 const W = 1080, H = 1350;

@@ -28,7 +28,7 @@ All knobs live in the `BRAND` object at the top of `build.mjs`:
 - `accent` — `#ED7A4E` (coral, matches the reference). Swap to `#3B82F6` for the
   electric-blue *Fórmula 100K* variant; everything (spark, highlights, keyword
   pill, card accents) follows the one variable.
-- `handle` — currently `@formula100k`. Change to your real IG handle.
+- `handle` — currently `@ninodirector`. Change to your real IG handle.
 - `avatarInitials` — letter shown in the profile chip (drop in a real photo by
   editing the `.avatar` block in `build.mjs` if you prefer).
 
