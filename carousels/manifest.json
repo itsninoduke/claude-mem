@@ -1,0 +1,33 @@
+[
+  {
+    "slug": "markit",
+    "total": 9,
+    "files": [
+      "slide-01.html",
+      "slide-02.html",
+      "slide-03.html",
+      "slide-04.html",
+      "slide-05.html",
+      "slide-06.html",
+      "slide-07.html",
+      "slide-08.html",
+      "slide-09.html"
+    ],
+    "title": "MARKIT — stop wasting tokens on PDFs"
+  },
+  {
+    "slug": "legal",
+    "total": 8,
+    "files": [
+      "slide-01.html",
+      "slide-02.html",
+      "slide-03.html",
+      "slide-04.html",
+      "slide-05.html",
+      "slide-06.html",
+      "slide-07.html",
+      "slide-08.html"
+    ],
+    "title": "LEGAL — agentes legales dentro de Claude"
+  }
+]
